@@ -40,7 +40,7 @@ function ExpenseForm(props) {
     event.preventDefault();
     const expenseData = {
       title: enteredTitle,
-      amount: enteredAmount,
+      amount: +enteredAmount, //+는 숫자 형태로 불러오게 하기 위함 (안그러면 문자 형태로 amount가 저장되게 됨.)
       date: new Date(enteredDate),
     };
 
